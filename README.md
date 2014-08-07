@@ -1,4 +1,4 @@
 api-version
 ===========
 
-A simple web display of current and upcoming versions of Webservice code
+A simple display of current and upcoming versions of Trulia's webservice code
