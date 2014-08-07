@@ -34,11 +34,12 @@ exports.getVersions = function(req, res) {
     //var versionsJSON = require("../versions.json");
 
     //var versionsJSON = '[{"version": "1", "start_date": "08/07/2014"},{"version": "2", "start_date": "10/07/2014"}]';
-    var versionsJSON = '{"versions": [{"version": "1", "start_date": "08/07/2014"},{"version": "2", "start_date": "10/07/2014"}]}';
-    console.log(JSON.parse(versionsJSON).versions);
+    var versionsJSON = '{"versions": {"GWAR29": {"start_date": "08/07/2014"}}}';
+    //console.log(JSON.parse(versionsJSON));
+    res.send(versionsJSON);
     /*
-    JSON.parse(versionsJSON, function(k, v) {
-        console.log(k) 
+    JSON.parse(versionsJSON, function(json) {
+        res.send(json);
     });*/
 }
 
